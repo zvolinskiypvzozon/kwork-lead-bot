@@ -1,0 +1,7 @@
+services:
+  bot:
+    build: .
+    env_file: .env
+    volumes:
+      - ./knowledge:/app/knowledge:ro
+    restart: unless-stopped
